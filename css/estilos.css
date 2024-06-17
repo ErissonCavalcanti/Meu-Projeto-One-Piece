@@ -1,3 +1,4 @@
+
 body{
     background-color: #000000;
     overflow: hidden;
@@ -33,7 +34,6 @@ main .personagem .imagem{
     position: absolute;
     top: 0;
     left: 120px;
-
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -58,7 +58,9 @@ main .personagem .imagem{
 }
 
 .conteudo .logo{
-    background-image:url(../imagens/one-piece-logo.png) ;
+    background-image:url('../imagens/one-piece-logo.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-size: 230px;
     background-repeat: no-repeat;
     height: 100px;
@@ -96,8 +98,6 @@ main .personagem .imagem{
 .botoes .botao.selecionado{
     transform: scale(1.2);
     box-shadow: 0 0 10px #d9d9d9;
-    
-
 }
 
 @keyframes queda {
@@ -114,4 +114,3 @@ main .personagem .imagem{
   .efeito-queda {
     animation: queda 1s ease forwards;
   }
-  
